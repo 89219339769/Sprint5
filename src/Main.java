@@ -43,7 +43,7 @@ public class Main {
         taskManager.getTask(2);
         taskManager.getTask(1);
 
-        taskManager.getEpic(3);
+        taskManager.getEаpic(3);
         taskManager.getEpic(4);
         taskManager.getEpic(3);
 
