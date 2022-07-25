@@ -36,20 +36,18 @@ public class Main {
         taskManager.addSubTask(task19);
         // Получили списки задач всех типов
 
-
         //проверили что разные типы задач сохраняются в списке истории и нет повторений
         taskManager.getTask(2);
         taskManager.getTask(0);
         taskManager.getTask(2);
         taskManager.getTask(1);
 
-        taskManager.getdEаpic(3);
+        taskManager.getEpic(3);
         taskManager.getEpic(4);
         taskManager.getEpic(3);
 
         taskManager.getSubTask(5);
         taskManager.getSubTask(7);
-
         System.out.println(inMemoryHistoryManager.getHistory());
 
         //обновили задачу статус задачи поменялся на DONE
