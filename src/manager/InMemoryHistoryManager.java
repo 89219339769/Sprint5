@@ -62,7 +62,6 @@ public class InMemoryHistoryManager implements HistoryManager {
     public List<Task> getHistory() {
         List<Task> finalListOfValue = new ArrayList<>();
         List<Node<Task>> listOfValue = new LinkedList<>(historyMap.values());
-
         for (int i = 0; i < listOfValue.size(); i++) {
             Node node = listOfValue.get(i);
             finalListOfValue.add(node.getItem());

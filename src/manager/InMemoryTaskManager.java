@@ -83,8 +83,8 @@ public class InMemoryTaskManager implements TaskManager {
         if ((subTasksOfEpic.isEmpty())) {  // true - таблица пустая
             epic.setStatus(TaskStatus.NEW);
         } else {
-            int a = 0;
-            int b = 0;
+            int a =0;
+            int b =0;
 
             for (SubTask x : subTasksOfEpic) {
                 TaskStatus y = x.getStatus();
@@ -103,7 +103,6 @@ public class InMemoryTaskManager implements TaskManager {
             }
         }
     }
-
 
     //5 Обнвление  задач всех типов
     @Override
@@ -148,8 +147,9 @@ public class InMemoryTaskManager implements TaskManager {
             historyManager.add(task);
     }
 
+    // Получение задачи по ID
     @Override
-    public void getSubTask(int id) {  // Получение задачи по ID
+    public void getSubTask(int id) {
         if (subTaskMap.isEmpty()) {
             System.out.println("В трекере задач нет задач");
             return;
